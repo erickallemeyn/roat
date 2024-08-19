@@ -20,7 +20,7 @@ Roat is not intended to be your chatbot. Use roat when you need to preserve and 
 - Numerical / Math problems
     * A rapidly improving area of LLMs
 
-##Tech Stack components
+## Tech Stack components
 - Python + FastAPI
 - Pytorch
 - MongoDB + Mongoose
