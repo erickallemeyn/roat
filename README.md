@@ -43,7 +43,7 @@ Contributions are welcome! You are also free to fork the codebase for your own p
 podman build -t roat-image .
 ```
 
-2Use `play kube` to containerize, pod, and run the image
+2. Use `play kube` to containerize, pod, and run the image
 ```
 podman play kube roat-pod.yaml
 ```
@@ -56,10 +56,7 @@ podman kube down roat-pod.yaml
 ```
 
 ## Express Setup (Leveraging OpenTofu + container images)
+ TODO
 
 ## Hosted Setup
-
-image: localhost/roat-image:latest
-    ports:
-    - containerPort: 80
-      hostPort: 8080
+ TODO
