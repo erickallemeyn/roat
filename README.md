@@ -20,16 +20,18 @@ Roat is not intended to be your chatbot. Use roat when you need to preserve and 
 - Numerical / Math problems
     * A rapidly improving area of LLMs
 
-# Tech Stack components
-- Python
-- FastAPI
+##Tech Stack components
+- Python + FastAPI
 - Pytorch
-- MongoDB
-- Docker
-- Kubernetes (GKE)
+- MongoDB + Mongoose
+- PostgreSQL & SQLAlchemy
+- Podman (containerization)
+- NextJS
+- Kubernetes
+- Helm
 - Github CI/CD
 - OpenTofu (IaC)
 - Infiscal (Secret Management)
 
-# Codebase
+## Codebase
 Contributions are welcome! You are also free to fork the codebase for your own purposes. If this project interests you, send me an email at erickallemeyn@gmail.com and lets talk more.
