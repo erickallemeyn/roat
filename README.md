@@ -35,3 +35,31 @@ Roat is not intended to be your chatbot. Use roat when you need to preserve and 
 
 ## Codebase
 Contributions are welcome! You are also free to fork the codebase for your own purposes. If this project interests you, send me an email at erickallemeyn@gmail.com and lets talk more.
+
+
+## Local Setup (Fully Manual)
+1. Install podman locally and Build the image
+```
+podman build -t roat-image .
+```
+
+2Use `play kube` to containerize, pod, and run the image
+```
+podman play kube roat-pod.yaml
+```
+
+3. In your browser, navigate to http://localhost:8080 to confirm it is working
+
+4. To stop or reset your environment, use the `kube down` command
+```
+podman kube down roat-pod.yaml
+```
+
+## Express Setup (Leveraging OpenTofu + container images)
+
+## Hosted Setup
+
+image: localhost/roat-image:latest
+    ports:
+    - containerPort: 80
+      hostPort: 8080
