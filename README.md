@@ -42,7 +42,7 @@ Podman is used for its high level of interoperability with Kubernetes. Local dev
 
 1. Install podman locally and Build the webapp image
 ```
-podman build -t roat-ui-image .
+podman build -t roat-ui-image ui
 ```
 
 2. Use `play kube` to containerize, pod, and run the container images
