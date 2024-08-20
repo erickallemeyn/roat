@@ -37,7 +37,7 @@ Roat is not intended to be your chatbot. Use roat when you need to preserve and 
 This is a monorepo and follows monorepo principles. 
 Contributions are welcome! You are also free to fork the codebase for your own purposes. If this project interests you, send me an email at erickallemeyn@gmail.com and lets talk more.
 
-## Local Setup (Podman)
+## Local Deployment
 Podman is used for its high level of interoperability with Kubernetes. Local development with podman and production deployment to K8S can be performed with the same yaml file. With minor modifications, this could be used with Docker as well.
 
 1. Install podman locally and Build the webapp image
@@ -68,14 +68,14 @@ podman kube down roat-ui-pod.yaml
 ## Local UI Development 
 Run local UI: 
 ```
-cd dashboard
+cd ui
 pnpm i
 pnpm dev
 ```
 http://localhost:3000
 
 
-## Running MongoDB Server
+## Running Local MongoDB Server
 ```
 podman play kube roat-db-pod.yaml
 ```

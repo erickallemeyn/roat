@@ -7,6 +7,6 @@ spec:
   - name: roat-ui-container
     image: localhost/roat-ui-image:latest
     ports:
-    - containerPort: 80
+    - containerPort: 3000
       hostPort: 8080
 
