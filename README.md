@@ -42,19 +42,19 @@ Podman is used for its high level of interoperability with Kubernetes. Local dev
 
 1. Install podman locally and Build the webapp image
 ```
-podman build -t roat-image .
+podman build -t roat-ui-image .
 ```
 
 2. Use `play kube` to containerize, pod, and run the container images
 ```
-podman play kube roat-pod.yaml
+podman play kube roat-ui-pod.yaml
 ```
 
 3. In your browser, navigate to http://localhost:8080 to confirm it is working
 
 4. To stop or reset your environment, use the `kube down` command
 ```
-podman kube down roat-pod.yaml
+podman kube down roat-ui-pod.yaml
 ```
  
 
@@ -74,7 +74,8 @@ pnpm dev
 ```
 http://localhost:3000
 
-## Local backend development
 
-
-
+## Running MongoDB Server
+```
+podman play kube roat-db-pod.yaml
+```

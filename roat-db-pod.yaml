@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: roat-db
+spec:
+  containers:
+  - name: roat-db-container
+    image: docker.io/mongodb/mongodb-community-server:latest
+    ports:
+    - containerPort: 27017
+      hostPort: 27010
+    volumeMounts:
+      - mountPath: /data/db
+        name: mongodb-data-pvc
+  volumes:
+    - name: mongodb-data-pvc
+      persistentVolumeClaim:
+        claimName: mongodb_data
