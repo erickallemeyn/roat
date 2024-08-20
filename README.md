@@ -56,13 +56,8 @@ podman play kube roat-pod.yaml
 ```
 podman kube down roat-pod.yaml
 ```
-
-## Express Setup (Leveraging OpenTofu + container images)
- TODO
-
-## Hosted Setup
- TODO
  
+
 ## Local Development Requirements
 - Podman
 - NodeJS
