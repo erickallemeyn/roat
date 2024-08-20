@@ -34,16 +34,18 @@ Roat is not intended to be your chatbot. Use roat when you need to preserve and 
 - Infiscal (Secret Management)
 
 ## Codebase
+This is a monorepo and follows monorepo principles. 
 Contributions are welcome! You are also free to fork the codebase for your own purposes. If this project interests you, send me an email at erickallemeyn@gmail.com and lets talk more.
 
+## Local Setup (Podman)
+Podman is used for its high level of interoperability with Kubernetes. Local development with podman and production deployment to K8S can be performed with the same yaml file. With minor modifications, this could be used with Docker as well.
 
-## Local Setup (Fully Manual)
-1. Install podman locally and Build the image
+1. Install podman locally and Build the webapp image
 ```
 podman build -t roat-image .
 ```
 
-2. Use `play kube` to containerize, pod, and run the image
+2. Use `play kube` to containerize, pod, and run the container images
 ```
 podman play kube roat-pod.yaml
 ```
@@ -60,3 +62,24 @@ podman kube down roat-pod.yaml
 
 ## Hosted Setup
  TODO
+ 
+## Local Development Requirements
+- Podman
+- NodeJS
+- Github
+- pnpm
+ 
+
+## Local UI Development 
+Run local UI: 
+```
+cd dashboard
+pnpm i
+pnpm dev
+```
+http://localhost:3000
+
+## Local backend development
+
+
+
