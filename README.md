@@ -47,7 +47,7 @@ podman build -t roat-ui-image .
 
 2. Use `play kube` to containerize, pod, and run the container images
 ```
-podman play kube roat-ui-pod.yaml
+podman kube play roat-ui-pod.yaml
 ```
 
 3. In your browser, navigate to http://localhost:8080 to confirm it is working
